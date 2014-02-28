@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+   <title>silly</title>
+</head>
+
+<body>
+  <button id="silly">do it</button>
+  <button id="clear">clear</button>
+  <div id="results"></div>
+
+  <script scr="/js/zepto.js"></script>  
+ <script scr="silly.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	
+  <script>
+  
+  var SILLY = (function(module){
+
+module.DoIt = function (resultObject){
+resultObject.prepend (Date()+ '<br/>');
+};
+return module;
+}(SILLY || {}));
+
+$('#results').html('lklk');
+$('#results').prepend (Date()+ '<br/>');
+
+
+  abc = 123;
+  document.write (abc);
+ <!--  document.write (aaa) -->
+	
+	  document.write ('hier');
+  $('#silly').click(function() {
+  alert ('ssss')
+  SILLY.DoIt($('#results'));
+  });
+
+  $('#clear').click(function() {
+$('#results').html('');
+  });
+    
+  
+  </script>
+  </body>
+  </html>
+  
